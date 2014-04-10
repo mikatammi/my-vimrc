@@ -33,7 +33,7 @@ function! StripTrailingWhitespace()
 endfunction
 
 " Automatically remove trailing whitespace from certain filetypes
-autocmd BufWritePre *.{cpp,hpp,c,h} :call StripTrailingWhitespace()
+autocmd BufWritePre *.{cpp,hpp,c,h,cc,hh,tex,bib,qbs,qml,sh} :call StripTrailingWhitespace()
 
 " Map trailing whitespace removal
 nnoremap <Leader>s :call StripTrailingWhitespace()<CR>
@@ -106,6 +106,6 @@ Bundle 'digitaltoad/vim-jade'
 
 " clang_complete - autocompletion using libclang for C-like languages
 Bundle 'Rip-Rip/clang_complete'
-
+let g:clang_library_path = '/usr/lib/llvm-3.4/lib/'
 
 set hidden
