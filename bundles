@@ -1,0 +1,86 @@
+"""""""""""
+" PLUGINS "
+"""""""""""
+
+" Fugitive - Git support
+NeoBundle 'tpope/vim-fugitive'
+
+" Vim Dispatch - asynchronous compile/make/test
+NeoBundle 'tpope/vim-dispatch.git'
+
+" Helper functions and commands for programming in VIM
+NeoBundle 'L9'
+
+" Sparkup - Write html expressions fast
+NeoBundle 'rstacruz/sparkup'
+
+" Configurable completions
+NeoBundle 'ervandew/supertab'
+
+" UltiSnips - Snippet expander
+NeoBundle 'UltiSnips'
+
+" LustyJuggler - Fast open file changing with <Leader>lj
+NeoBundle 'LustyJuggler'
+
+" FuzzyFinder - Fuzzy pattern file/tag/everything finder
+NeoBundle 'FuzzyFinder'
+nnoremap <Leader>ff :FufFile**/<CR>
+
+" Vertigo - Better vertical movement
+NeoBundle 'prendradjaja/vim-vertigo'
+
+" Editorconfig - Way to configure simple styles accross different editors
+NeoBundle 'editorconfig/editorconfig-vim'
+
+" Command
+NeoBundle 'git://git.wincent.com/command-t.git'
+
+" Alternate file opener
+NeoBundle 'a.vim'
+
+""""""""""""""""""""""""""""""""
+" Programming language support "
+""""""""""""""""""""""""""""""""
+
+"---------"
+" Generic "
+"---------"
+
+" Syntax checking for many languages
+NeoBundle 'scrooloose/syntastic'
+
+"----"
+" Qt "
+"----"
+
+" QML Syntax highlighting
+NeoBundle 'peterhoeg/vim-qml'
+autocmd BufRead,BufNewFile *.qbs setfiletype qml
+
+"-----------------"
+" Web programming "
+"-----------------"
+
+" Javascript indentation and syntax and few other misc features
+NeoBundle 'pangloss/vim-javascript'
+
+" CoffeeScript support to vim. Covers syntax, indenting, compiling and more
+NeoBundle 'kchmck/vim-coffee-script'
+
+" Navigation and syntax highlight etc. in Ruby on Rails projects
+NeoBundle 'tpope/vim-rails.git'
+
+" Jade template engine syntax highlighting and indent
+NeoBundle 'digitaltoad/vim-jade'
+
+
+"---------"
+" C & C++ "
+"---------"
+
+" clang_complete - autocompletion using libclang for C-like languages
+NeoBundle 'Rip-Rip/clang_complete'
+let g:clang_library_path = '/usr/lib/llvm-3.4/lib/'
+
+" vim: set syntax=vim:
