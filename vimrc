@@ -72,3 +72,6 @@ set hidden
 
 " Show line numbers
 set number
+
+" Error column background as black
+hi SignColumn ctermbg=232

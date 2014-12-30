@@ -1,4 +1,4 @@
-"""""""""""
+
 " PLUGINS "
 """""""""""
 
@@ -25,9 +25,16 @@ NeoBundle 'LustyJuggler'
 
 " ctrlp - Fuzzy file, buffer, mru, tag, etc. finder
 NeoBundle 'kien/ctrlp.vim'
+let g:ctrlp_cmd = 'CtrlPMixed'
 
 " ctrlp-funky, extension to ctrlp for function navigation
 NeoBundle 'tacahiroy/ctrlp-funky'
+
+" vim-ctrlspace - Vim Workspace Controller
+NeoBundle 'szw/vim-ctrlspace'
+
+" vim-project - project specific settings
+NeoBundle 'amiorin/vim-project'
 
 " Vertigo - Better vertical movement
 NeoBundle 'prendradjaja/vim-vertigo'
@@ -52,6 +59,9 @@ NeoBundle 'a.vim'
 " Syntax checking for many languages
 NeoBundle 'scrooloose/syntastic'
 
+" YouCompleteMe - Code completion for C-family languages and Python
+NeoBundle 'valloric/YouCompleteMe'
+
 "----"
 " Qt "
 "----"
@@ -75,15 +85,5 @@ NeoBundle 'tpope/vim-rails.git'
 
 " Jade template engine syntax highlighting and indent
 NeoBundle 'digitaltoad/vim-jade'
-
-
-"---------"
-" C & C++ "
-"---------"
-
-" clang_complete - autocompletion using libclang for C-like languages
-NeoBundle 'Rip-Rip/clang_complete'
-" TODO: Configure as environment specific
-let g:clang_library_path = '/usr/lib/llvm-3.4/lib/'
 
 " vim: set syntax=vim:
