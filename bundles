@@ -86,4 +86,11 @@ NeoBundle 'tpope/vim-rails.git'
 " Jade template engine syntax highlighting and indent
 NeoBundle 'digitaltoad/vim-jade'
 
+"------"
+" GLSL
+"------"
+
+" GLSL Syntax
+NeoBundle 'tikhomirov/vim-glsl'
+
 " vim: set syntax=vim:
