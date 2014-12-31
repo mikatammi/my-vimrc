@@ -1,0 +1,20 @@
+set rtp+=~/.vim/bundle/vim-project
+call project#rc("~/work")
+
+function! Project_OpenTEE(...)
+    set textwidth=100
+    if (&ft=='c')
+        set noexpandtab
+        set shiftwidth=8
+        set tabstop=8
+        set softtabstop=8
+    endif
+    let g:syntastic_c_checkpatch_exec = '~/Open-TEE-Trusted-UI/project/checkpatch.pl'
+    let g:syntastic_c_checkers = ['checkpatch']
+endfunction
+
+Project 'Open-TEE'
+Project 'Open-TEE-Trusted-UI'
+
+Callback 'Open-TEE', 'Project_OpenTEE'
+Callback 'Open-TEE-Trusted-UI', 'Project_OpenTEE'

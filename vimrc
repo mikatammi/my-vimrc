@@ -75,3 +75,6 @@ set number
 
 " Error column background as black
 hi SignColumn ctermbg=232
+
+" Include project configs
+execute 'source ' . g:myvimrcpath . '/projects'
