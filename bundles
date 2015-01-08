@@ -49,6 +49,9 @@ NeoBundle 'git://git.wincent.com/command-t.git'
 " Alternate file opener
 NeoBundle 'a.vim'
 
+" Ack, grep alternative
+NeoBundle 'mileszs/ack.vim'
+
 """"""""""""""""""""""""""""""""
 " Programming language support "
 """"""""""""""""""""""""""""""""
