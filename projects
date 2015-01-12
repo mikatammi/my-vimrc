@@ -9,7 +9,7 @@ function! Project_OpenTEE(...)
         set tabstop=8
         set softtabstop=8
     endif
-    let g:syntastic_c_checkpatch_exec = '~/Open-TEE-Trusted-UI/project/checkpatch.pl'
+    let g:syntastic_c_checkpatch_exec = '~/work/Open-TEE-Trusted-UI/project/checkpatch.pl'
     let g:syntastic_c_checkers = ['checkpatch']
 endfunction
 
