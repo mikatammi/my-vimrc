@@ -66,6 +66,13 @@ NeoBundle 'scrooloose/syntastic'
 " YouCompleteMe - Code completion for C-family languages and Python
 NeoBundle 'valloric/YouCompleteMe'
 
+"--------"
+" Python "
+"--------"
+
+" Jedi - an awesome autocompletion library for Python
+NeoBundle 'davidhalter/jedi-vim'
+
 "----"
 " Qt "
 "----"
