@@ -73,6 +73,13 @@ NeoBundle 'valloric/YouCompleteMe'
 " Jedi - an awesome autocompletion library for Python
 NeoBundle 'davidhalter/jedi-vim'
 
+"-------"
+" LaTeX "
+"-------"
+
+" LaTeX Box - Lightweight Toolbox for LaTeX
+NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
+
 "----"
 " Qt "
 "----"
@@ -87,6 +94,9 @@ autocmd BufRead,BufNewFile *.qbs setfiletype qml
 
 " Javascript indentation and syntax and few other misc features
 NeoBundle 'pangloss/vim-javascript'
+
+" JSON
+NeoBundle 'elzr/vim-json'
 
 " CoffeeScript support to vim. Covers syntax, indenting, compiling and more
 NeoBundle 'kchmck/vim-coffee-script'
