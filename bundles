@@ -88,6 +88,13 @@ NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
 NeoBundle 'peterhoeg/vim-qml'
 autocmd BufRead,BufNewFile *.qbs setfiletype qml
 
+"--------"
+" Docker "
+"--------"
+
+" Dockerfile syntax
+NeoBundle 'ekalinin/Dockerfile.vim'
+
 "-----------------"
 " Web programming "
 "-----------------"
